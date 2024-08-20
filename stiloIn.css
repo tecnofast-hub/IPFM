@@ -1,0 +1,82 @@
+@charset "utf-8";
+/* CSS Document */
+body header {
+	background-color: #000000;
+	text-align: center;
+	color:#E88D0A;
+	text-shandow: 3px 2px #A26223;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 30;
+}
+body footer {
+	position:relative;
+	top:5em;
+	background-color:  #000000;
+	text-align: left;
+	color:#F9F4F4;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";	
+}
+body footer p{
+	text-align: center;
+	
+}
+body footer h5{
+	color: #c7ba10;
+}
+.menu {
+	color: #F8F7AF;
+	margin-top: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background-color: #121111;
+	text-align: center;
+	position: relative;
+}
+.menu ul{
+	background-color: #121111;
+	margin:0px;
+	padding: 0px;
+	border:0px solid #7C7C7C;
+	overflow: hidden;
+	list-style-type: none;
+}
+.menu ul li{
+	float: left;
+	width: 110px;
+}
+.menu ul li:hover{
+	background-color: rgba(253,253,253,.5);
+}
+
+
+ul li a{
+	border-left: 0px solid #FFFFFF;
+	border-right: 0px solid #7C7C7C;
+	padding: .5em;
+	display: block;
+	text-decoration: none;
+	color: #E8F7AF;
+}
+ul li a:hover{
+	color:#F1A707;
+}
+
+.submenu{
+	position: absolute;
+  background: #333333;
+	width: 120%;
+	visibility: hidden;
+}
+.submenu li a{
+	display: block;
+	padding: 15px;
+		color: #fff;
+	font-family: 'open sans';
+	text-decoration: none;	
+}
+.menu li:hover .submenu{
+	visibility: visible;
+}
+   

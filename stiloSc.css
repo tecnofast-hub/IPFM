@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+body header {
+	background-color: #131313;
+	text-align: center;
+	color:#E88D0A;
+	text-shandow: 3px 2px #060606;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 30;
+}
+body footer {
+	position:relative;
+	top:5em;
+	background-color: #131313;
+	text-align: left;
+	color:#F3EAEA;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";	
+}
+.Descripcion{
+	 width: 400px;
+	background-color:#F2966F;
+	text-align: left;
+	font-size: 27px;
+	border-top-right-radius: 60px;
+	border-top-left-radius: 60px;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	display: inline;
+	border-style: solid;
+	border-color: #7B2A2C;
+	position: absolute;
+	left: 50%;
+	-webkit-transform:translate(-0%,0%);
+	margin-top: 1em;
+} 
+.menu {
+	color: #F8F7AF;
+	margin-top: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background-color: #121111;
+	text-align: center;
+	position: relative;
+}
+.menu ul{
+	background-color: #121111;
+	margin:20px;
+	padding: 0px;
+	border:0px solid #7C7C7C;
+	overflow: hidden;
+	list-style-type: none;
+}
+.menu ul li{
+	float: left;
+	width: 110px;
+}
+.menu ul li:hover{
+	background-color: rgba(253,253,253,.5);
+}
+ul li a{
+	border-left: 0px solid #FFFFFF;
+	border-right: 0px solid #7C7C7C;
+	padding: .5em;
+	display: block;
+	text-decoration: none;
+	color: #E8F7AF;
+}
+ul li a:hover{
+	color:#F1A707;
+}

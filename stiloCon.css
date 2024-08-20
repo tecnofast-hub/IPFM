@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+body header {
+	background-color: #B9B3B3;
+	text-align: center;
+	color: #000000;
+	text-shandow: 3px 2px #A26223;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	font-size: 30;
+}
+body footer {
+	position:relative;
+	top:10em;
+	background-color: #000000;
+	text-align: left;
+	color:#F9F4F4;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";	
+}
+.Descripcion{
+	 width: 500px;
+	background-color: #F9F3F3;
+	text-align: left;
+	font-size: 30px;
+	border-top-right-radius: 58px;
+	border-top-left-radius: 58px;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-bottom: 1em;
+	padding-left: 1em;
+	display: inline;
+	border-style: solid;
+	border-color: #B9B3B3;
+	position: absolute;
+	left: 50%;
+	-webkit-transform:translate(-50%,0%);
+	margin-top: 1em;
+} 
+.menu {
+	color: #F8F7AF;
+	margin-top: 5px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 3px;
+	padding-right: 3px;
+	background-color: #121111;
+	text-align: center;
+	position: relative;
+}
+.menu ul{
+	background-color: #121111;
+	margin:0px;
+	padding: 0px;
+	border:0px solid #7C7C7C;
+	overflow: hidden;
+	list-style-type: none;
+}
+.menu ul li{
+	float: left;
+	width: 110px;
+}
+.menu ul li:hover{
+	background-color: rgba(253,253,253,.5);
+}
+ul li a{
+	border-left: 0px solid #FFFFFF;
+	border-right: 0px solid #7C7C7C;
+	padding: .5em;
+	display: block;
+	text-decoration: none;
+	color: #E8F7AF;
+}
+ul li a:hover{
+	color:#F1A707;
+}
+
+.submenu{
+	position: absolute;
+  background: #333333;
+	width: 120%;
+	visibility: hidden;
+}
+.submenu li a{
+	display: block;
+	padding: 15px;
+		color: #fff;
+	font-family: 'open sans';
+	text-decoration: none;	
+}
+.menu li:hover .submenu{
+	visibility: visible;
+}
+

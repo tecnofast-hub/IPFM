@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="hola.css">
+</head>
+<body>
+	<center><h1>Datos del Alumno</h1></center>
+    
+    <form action="registro.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+        <label for="identidad">Identidad:</label>
+        <input type="text" id="identidad" name="identidad" required><br><br>
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br><br>
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="">Seleccione una opción</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select><br><br>
+		<style>
+	
+		form {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		input[type="text"], input[type="date"], input[type="tel"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+		}
+		
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+		
+		th, td {
+			border: 1px solid #ccc;
+			padding: 10px;
+			text-align: left;
+		}
+		
+		th {
+			background-color: #f0f0f0;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h2>Datos del Padre</h2>
+		<label for="padre_nombre">Nombre:</label>
+		<input type="text" id="padre_nombre" name="padre_nombre">
+		
+		<label for="padre_apellido">Apellido:</label>
+		<input type="text" id="padre_apellido" name="padre_apellido">
+		
+		<label for="padre_edad">Edad:</label>
+		<input type="number" id="padre_edad" name="padre_edad">
+		
+		
+		<label for="padre_profesion">Profesión:</label>
+		<input type="text" id="padre_profesion" name="padre_profesion">
+		
+		<label for="padre_telefono">Teléfono:</label>
+		<input type="tel" id="padre_telefono" name="padre_telefono">
+		
+		<label for="padre_identidad">Identidad:</label>
+		<input type="text" id="padre_identidad" name="padre_identidad">
+		
+		<h2>Datos de la Madre</h2>
+		<label for="madre_nombre">Nombre:</label>
+		<input type="text" id="madre_nombre" name="madre_nombre">
+		
+		<label for="madre_apellido">Apellido:</label>
+		<input type="text" id="madre_apellido" name="madre_apellido">
+		
+		<label for="madre_edad">Edad:</label>
+		<input type="number" id="madre_edad" name="madre_edad">
+		
+		
+		<label for="madre_profesion">Profesión:</label>
+		<input type="text" id="madre_profesion" name="madre_profesion">
+		
+		<label for="madre_telefono">Teléfono:</label>
+		<input type="tel" id="madre_telefono" name="madre_telefono">
+		
+		<label for="madre_identidad">Identidad:</label>
+		<input type="text" id="madre_identidad" name="madre_identidad">
+		
+		<h2>Bachiller</h2>
+		
+		 <label for="jornada">Jornada:</label>
+  <select id="jornada" name="jornada">
+	  <option value=""></option>
+    <option value="Matutina">Matutina</option>
+    <option value="Vespertina">Vespertina</option>
+    <option value="Nocturna">Nocturna</option>
+  </select>
+  <br><br>
+  <label for="seccion">Sección:</label>
+  <select id="seccion" name="seccion">
+	  <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+  <br><br>
+  <label for="carrera">Carrera:</label>
+  <select id="carrera" name="carrera">
+	   <option value=""></option>
+    <option value="BTP INFORMATICA">BTP INFORMATICA</option>
+    <option value="BTP CIENCIAS Y LETRAS">BTP CIENCIAS Y LETRAS</option>
+    <option value="BTP CONTROL Y CALIDAD">BTP CONTROL Y CALIDAD</option>
+    <option value="BTP CONTADURIA Y FINANZAS">BTP CONTADURIA Y FINANZAS</option>
+	  <option value="BTP ADMINISTRACION DE EMPRESAS">BTP ADMINISTRACION DE EMPRESAS</option>
+  </select>
+  <br><br>
+		<h2>Ciclo Comun</h2>
+		
+		 <label for="jornada_ciclo">Jornada:</label>
+  <select id="jornada_ciclo" name="jornada_ciclo">
+	  <option value=""></option>
+    <option value="Matutina">Matutina</option>
+    <option value="Vespertina">Vespertina</option>
+    <option value="Nocturna">Nocturna</option>
+  </select>
+  <br><br>
+  <label for="seccion_ciclo">Sección:</label>
+  <select id="seccion_ciclo" name="seccion_ciclo">
+	    <option value=""></option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+  <br><br>
+  <label for="ciclo">Ciclo:</label>
+  <select id="ciclo" name="ciclo">
+	  <option value=""></option>
+    <option value="SEPTIMO">SEPTIMO</option>
+    <option value="OCTAVO">OCTAVO</option>
+    <option value="NOVENO">NOVENO</option>
+    
+  </select>
+  <br><br>
+		
+		
+		  <input type="submit" value="Registrar">
+		
+	</form>
+		
+      
+    </form>
+  
+     
+   
+</body>
+</html>
